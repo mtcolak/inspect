@@ -33,9 +33,9 @@ module.exports = {
         'steam_user': {},
 
         // 🔁 Retry settings for reconnecting to Steam
-        '_initial_reconnect_delay': 60000,
-        '_max_reconnect_delay': 300000,
-        '_heartbeat_interval': 300000
+        '_initial_reconnect_delay': 60 * 1000,
+        '_max_reconnect_delay': 5 * 60 * 1000,
+        '_heartbeat_interval': 5 * 60 * 1000
     },
     // Origins allowed to connect to the HTTP/HTTPS API
     'allowed_origins': [
