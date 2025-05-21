@@ -30,7 +30,12 @@ module.exports = {
         // Amount of milliseconds to wait until a request to Valve is timed out
         'request_ttl': 2000,
         // OPTIONAL: Settings for Steam User (https://github.com/DoctorMcKay/node-steam-user#options-)
-        'steam_user': {}
+        'steam_user': {},
+
+        // 🔁 Retry settings for reconnecting to Steam
+        '_initial_reconnect_delay': 60000,
+        '_max_reconnect_delay': 300000,
+        '_heartbeat_interval': 300000
     },
     // Origins allowed to connect to the HTTP/HTTPS API
     'allowed_origins': [
